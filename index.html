@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据类型</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="shuju">
+        <h1>数据的类型：</h1>
+        <dl class="clearfix">
+            <dt>number</dt>
+            <dd>数字</dd>
+            <dt>string</dt>
+            <dd>字符串</dd>
+            <dt>boolean</dt>
+            <dd>布尔值，(true,false)</dd>
+            <dt>symbol</dt>
+            <dd>符号</dd>
+            <dt>undefined</dt>
+            <dd>空</dd>
+            <dt>null</dt>
+            <dd>空</dd>
+            <dt>object</dt>
+            <dd>对象</dd>
+        </dl>
+    </div>
+    <h2>number</h2>
+    <div class="clearfix">
+        <div class="a">
+            十进制</br>
+            1+.1=1.1</br>
+            1.23e²=1.23*10²
+        </div>
+        <div class="b">
+            二进制</br>
+            0b11   //3</br>
+            0b1    //1</br>
+        </div>
+        <div class="c">
+            八进制</br>
+            以0开头</br>
+            011   //9</br>
+            012  //10
+        </div>
+        <div class="d">
+            十六进制</br>
+            以0X开头</br>
+            0x11  //17
+        </div>
+    </div>
+    <h2>string</h2>
+    <p>
+       例： '你好'，"你好" </br>
+        '' ,""   表示空字符串，且长度为0。'空格'也是一个字符串，长度为1。</br>
+        \:表示转义符，例如要表示一个引号，格式为：'\''。要表示一个反斜杠就在加一个转义符：'\\'。</br>
+        多行字符串，如下：</br>
+        var s=`1234\</br>
+        56789`      ,为反引号，且反斜杠后不能直接跟回车。</br>
+        上式等同于</br>
+        '1234'+</br>
+        '56789'</br>
+        推荐使用后一种</br>
+    </p>
+    <h2>boolean</h2>
+    <p>只有2个值，true和false</p>
+    <h2>undefined和null</h2>
+    <p>
+        都表示为空，但是如果一个变量没有被赋值，使用undefined;如果有一个对象object，现在还不想赋值就用null。</br>
+    </p>
+    <h2>object</h2>
+    <p>person={name:'xxx'</br>
+                age:'1'</br>
+                self:'person'此项式成立的</br>
+    }</br>
+    preson['name']中的key如果符合标识符要求，则可以改写成preson.name</br>
+    delete person['name']表示同时删除key和vull
+    </p>
+    <h2>typeof</h2>
+    <p>返回值的数据类型，typeof数据类型一般都返回本身。</br>
+        但typeof null返回object。</br>
+        除此之外，一个函数的返回值是function
+    </p>
+
+</body>
+</html>
